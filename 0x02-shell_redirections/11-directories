@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -type d ! -patth . | wc -1
