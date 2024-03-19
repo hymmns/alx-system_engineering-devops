@@ -7,9 +7,9 @@
 
 for each_file in *; do
 
-	if [[ ! ( "$file" == "." || "$file" == ".." ) && ( -d "$file" || -f "$file" ) ]]; then
-		format=$(ea)
-		echo "$each_file"
+	if [[ ! ( "$each_file" == "." || "$each_file" == ".." ) && ( -d "$each_file" || -f "$each_file" ) ]]; then
+		format=$(echo "$each_file" | cut -d '-' -f 2)
+
+		echo "$format"
 	fi
-	echo "$each_file"
 done
