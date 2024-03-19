@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# displays Best School 10 times using untill loop
+
+times=0
+
+until [ $times -eq 10 ]; do
+	echo "Best School"
+	((times++))
+done
