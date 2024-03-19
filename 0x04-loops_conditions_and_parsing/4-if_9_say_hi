@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# displays Best School 10 times using while loop but the for 9th iteration add Hi
+
+times=0
+
+while [ $times -lt 10 ]; do
+	echo "Best School"
+
+	if [ $times -eq 8 ]; then
+		 echo "Hi"
+	fi
+	((times++))
+done
