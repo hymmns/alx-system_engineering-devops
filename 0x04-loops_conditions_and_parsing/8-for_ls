@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#  displays:
+# The content of the current directory
+# In a list format
+# Where only the part of the name after the first dash is displayed
+
+
+for each_file in *; do
+
+	if [[ ! ( "$file" == "." || "$file" == ".." ) && ( -d "$file" || -f "$file" ) ]]; then
+		format=$(ea)
+		echo "$each_file"
+	fi
+	echo "$each_file"
+done
